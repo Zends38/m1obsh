@@ -73,6 +73,4 @@ interface int2
   dhcp-server 1
 ntp timezone utc+5
 timedatectl status
-ex
-write memory
 ```
