@@ -37,6 +37,10 @@ interface int2
   connect port te1 service-instance te1/int2
   ex
 ip route 0.0.0.0 0.0.0.0 172.16.4.1
+username net_admin
+  password P@ssw0rd
+  role admin
+  ex
 int tunnel.0
   ip add 172.16.0.1/30
   ip mtu 1400
