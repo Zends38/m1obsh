@@ -40,8 +40,7 @@ ip route 0.0.0.0 0.0.0.0 172.16.4.1
 int tunnel.0
   ip add 172.16.0.1/30
   ip mtu 1400
-  ex
-ip tunnel 172.16.4.2 172.16.5.2 mode gre
+  ip tunnel 172.16.4.2 172.16.5.2 mode gre
 router ospf 1
   router-id 1.1.1.1
   network 172.16.0.0/30 area 0
@@ -72,5 +71,5 @@ dhcp-server 1
 interface int2
   dhcp-server 1
 ntp timezone utc+5
-timedatectl status
+show ntp timezone
 ```
